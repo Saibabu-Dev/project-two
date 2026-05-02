@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Git Pull Test') {
+        stage('Build Docker Image') {
             steps {
-                echo 'Code pulled from GitHub successfully 🚀'
+                sh 'docker build -t project-two .'
             }
         }
     }
