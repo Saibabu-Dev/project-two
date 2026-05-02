@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build Docker Image') {
             steps {
-               sh 'docker build -t babusai/project-two .'
+              sh 'docker build --no-cache -t babusai/project-two .'
             }
         }
 
