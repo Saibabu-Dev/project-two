@@ -6,7 +6,7 @@ This project demonstrates an end-to-end DevOps pipeline using Docker, Jenkins, a
 ## ⚙️ Tech Stack
 - Docker
 - Jenkins
-- Kubernetes (Minikube)
+- Kubernetes
 - GitHub
 - Flask (Python)
 
@@ -33,12 +33,6 @@ README.md
 ```
 
 ## ▶️ How to Run
-
-### Start Minikube
-```
-minikube start
-```
-
 ### Apply Deployment
 ```
 kubectl apply -f deployment.yaml
@@ -51,7 +45,7 @@ kubectl apply -f service.yaml
 
 ### Access Application
 ```
-minikube service myservice --url
+kubectl get svc
 ```
 
 ## 📈 Features
